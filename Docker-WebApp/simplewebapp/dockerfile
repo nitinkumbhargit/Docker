@@ -1,0 +1,5 @@
+#Step 1: Use the official base image from the docker hub
+FROM nginx:alpine
+
+#Step 2: Copy local web site pages to default nginx web directory
+COPY index.html /usr/share/nginx/html/index.html
